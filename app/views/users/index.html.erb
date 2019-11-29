@@ -112,15 +112,58 @@
                       <% if i%3==0%>
                         <tr>
                           <td>
-                            <%= render "pattern"%>
+                            <a href="<%= "/users/" << user.id.to_s%>">
+	<div class="card">
+        	<% if user.gender=='Male'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                <%elsif user.gender=='Female'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:100%">
+                <% else%>
+			<img src="assets/user-icon.jpg" alt="Avatar" style="width:100%">
+		<% end%>
+                <div class="container-card">
+                	<h4><b><%= user.fname%></b></h4>
+                        <p><%= user.email%></p>
+                </div>
+        </div>
+</a>
+
                           </td>
                       <% elsif i%3==1%>
                           <td>
-                            <%= render "pattern"%>
+                            <a href="<%= "/users/" << user.id.to_s%>">
+	<div class="card">
+        	<% if user.gender=='Male'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                <%elsif user.gender=='Female'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:100%">
+                <% else%>
+			<img src="assets/user-icon.jpg" alt="Avatar" style="width:100%">
+		<% end%>
+                <div class="container-card">
+                	<h4><b><%= user.fname%></b></h4>
+                        <p><%= user.email%></p>
+                </div>
+        </div>
+</a>
                           </td>
                       <% else%>
                           <td>
-                            <%= render "pattern"%>
+                            <a href="<%= "/users/" << user.id.to_s%>">
+	<div class="card">
+        	<% if user.gender=='Male'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
+                <%elsif user.gender=='Female'%>
+                	<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" style="width:100%">
+                <% else%>
+			<img src="assets/user-icon.jpg" alt="Avatar" style="width:100%">
+		<% end%>
+                <div class="container-card">
+                	<h4><b><%= user.fname%></b></h4>
+                        <p><%= user.email%></p>
+                </div>
+        </div>
+</a>
                           </td>
                         </tr>
                       <% end%>
